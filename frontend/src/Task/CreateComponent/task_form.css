@@ -1,0 +1,86 @@
+/* 设置整个表单的外观 */
+.form-container {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    color: #333;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* 输入框样式 */
+  .form-container input, .form-container textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .form-container textarea {
+    overflow-y: hidden;
+    resize: none;
+  }
+  
+  /* 选择日期的样式 */
+  .form-container input[type="date"] {
+    cursor: pointer;
+  }
+  
+  /* 按钮样式 */
+  #add-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #787878;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-button:hover {
+    background-color: #383838;
+  }
+  
+  /* 将表单隐藏，通过JavaScript来控制显示 */
+  .form-hidden {
+    display: none;
+  }
+  
+  #cancel-button {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff; /* Tomato color for cancellation */
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    font-weight: bolder;
+  }
+  
+  #cancel-button:hover {
+    background-color: #c5c5c5; /* Darker red when hovered */
+  }
+  
+  .submit-button {
+    width: 100%;
+    height: 40px;
+    background-color: #545454; /* Tomato color for cancellation */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    font-weight: bold;
+  }

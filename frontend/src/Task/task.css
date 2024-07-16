@@ -1,0 +1,82 @@
+/* 单个task外观 */
+.task-container {
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+  color: #333;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.task-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.red {
+  background-color: rgba(255, 99, 71, 0.6);
+}
+
+.yellow {
+  background-color: rgba(240, 254, 51, 0.6);
+}
+
+.green {
+  background-color: rgba(50, 205, 50, 0.6);
+}
+
+.task-container input{
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.task-title{
+  font-size: 30px;
+}
+
+.task-brief{
+  width: 100%;
+  padding-left: 10px;
+  display: block;
+}
+
+.task-deadline{
+  position: relative;
+  border-radius: 5px;
+  padding: 0px 5px;   /* 添加内边距 */
+  border: 2px solid #8b8b8b; /* 添加边框 */
+  font-weight: bold; /* 加粗字体 */
+  color: #333; /* 字体颜色 */
+  bottom: 4px;
+  display: inline-block;
+}
+ 
+.task-content-collapsed {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+  display: block;
+  overflow: hidden;
+}
+
+.task-content-expanded {
+  width: 100%;
+  height: 100px; 
+  opacity: 1;
+  transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+  display: block;
+  overflow-y: auto; 
+  resize: none;
+}
+
+.update-button-invisible{
+  visibility: hidden;
+}
+
+.task-completed{
+  display: inline-block;
+}

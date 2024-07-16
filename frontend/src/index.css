@@ -1,0 +1,20 @@
+button:active{
+    transform: scale(0.975);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+* {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    transform: none;
+}

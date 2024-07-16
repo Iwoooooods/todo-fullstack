@@ -1,0 +1,48 @@
+.login-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  position: relative;
+  margin-inline: auto;
+  /*margin-left: auto;*/
+  /*margin-top: auto;*/
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.username-input,
+.password-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button,
+.register-button{
+  background-color: #4CAF50; /* 按钮颜色 */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.login-button label,
+.register-button label{
+  margin-bottom: 5px;
+  color: #555;
+}
