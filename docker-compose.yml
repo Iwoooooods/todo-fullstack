@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "10086:10086"
+#    volumes:
+#      - ./backend:/app
+#    environment:
+#      - DEV_DATABASE_URL=postgresql://username:password@host:port/database
+
+#  frontend:
+#    build:
+#      context: ./frontend
+#      dockerfile: Dockerfile
+#    ports:
+#      - "3000:3000"
+#    volumes:
+#      - ./frontend:/app
+#    environment:
+#      - API_URL=http://localhost:10086
+
+networks:
+  default:
+    driver: bridge
