@@ -12,16 +12,14 @@ services:
 #    environment:
 #      - DEV_DATABASE_URL=postgresql://username:password@host:port/database
 
-#  frontend:
-#    build:
-#      context: ./frontend
-#      dockerfile: Dockerfile
-#    ports:
-#      - "3000:3000"
-#    volumes:
-#      - ./frontend:/app
-#    environment:
-#      - API_URL=http://localhost:10086
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
 
 networks:
   default:
