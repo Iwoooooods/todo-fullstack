@@ -11,15 +11,13 @@ services:
 #      - ./backend:/app
 #    environment:
 #      - DEV_DATABASE_URL=postgresql://username:password@host:port/database
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+  nginx:
+    image: nginx:stable-alpine
     ports:
-      - "3000:80"
-    networks:
-      - app-network
+      - "80:80"
+    volumes:
+      - ./frontend/build:/usr/share/nginx/html
+      - ./nginx/conf:/etc/nginx/conf.d
 
 networks:
   default:
